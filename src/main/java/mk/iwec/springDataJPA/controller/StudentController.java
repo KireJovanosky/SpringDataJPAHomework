@@ -28,7 +28,7 @@ public class StudentController {
 
     @GetMapping("/id")
     @ResponseBody
-    public Optional<Student> findStudentByLastName(@RequestParam Integer id){
+    public Optional<Student> findStudentById(@RequestParam Integer id){
         return service.findStudentById(id);
     }
 
