@@ -22,13 +22,13 @@ public class StudentController {
 
     @GetMapping("/lastName")
     @ResponseBody
-    public Student findStudentById(@RequestParam String lastName){
+    public Student findStudentByLastName(@RequestParam String lastName){
         return service.findByLastName(lastName);
     }
 
     @GetMapping("/id")
     @ResponseBody
-    public Optional<Student> findStudentById(@RequestParam Integer id){
+    public Optional<Student> findStudentByLastName(@RequestParam Integer id){
         return service.findStudentById(id);
     }
 
